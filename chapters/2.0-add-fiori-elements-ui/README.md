@@ -10,9 +10,10 @@
     >For Windows: Ctrl + Shift + P
 
 2. Enter your Cloud Foundry Endpoint
-<img src="img/CFLogin.png" width="900">
+    <img src="img/CFLogin.png" width="900">
 
-    You can find your endpoint inside the cockpit. Navigate to your **Global Account** > **Trial Subaccount** under **Cloud Foundry Environment**, for example `https://api.cf.us10-001.hana.ondemand.com`
+    You can find your endpoint inside the cockpit. Navigate to your **Global Account** > **Trial Subaccount** under **Cloud Foundry Environment**, for example 
+    https://api.cf.us10-001.hana.ondemand.com
 
     <img src="img/SubaccountAPIendpoint.png" width="900">
 
@@ -69,4 +70,16 @@ You will be prompted to login to your identity provider. If you are already logg
     <img src="img/Deployment.png" width="900">
 
 7. In the FLP configuration step:
+
+    Enter a Semantic Object.
+    Enter a **unique** Action
+    Enter a Title
+    <img src="img/FLPConfig.png" width="900">
+
+
+## 3. Preview your application
+
+Open Application Info > Preview Application, it should look like this:
+
+<img src="img/PreviewApp.png" width="900">
 
