@@ -1,18 +1,4 @@
-# SAP-samples/repository-template
-This default template for SAP Samples repositories includes files for README, LICENSE, and REUSE.toml. All repositories on github.com/SAP-samples will be created based on this template.
-
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The REUSE.toml file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the REUSE.toml in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# [Title]
+# UI5con 2025 - Intuitive UI Enhancements: Easy SAPUI5 Key User Adaptation
 <!-- Please include descriptive title -->
 
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:
@@ -20,13 +6,19 @@ Please edit this file as it is the primary description file for your project. Yo
 -->
 
 ## Description
-<!-- Please include SEO-friendly description -->
+This hands-on tutorial dives into the world of UI adaptation, providing tools and techniques to enhance SAPUI5 applications.
+
+You'll learn how to enable your own Fiori elements application for SAPUI5 flexibility, understanding the process from start to finish. Then, you'll deploy the app to a BTP ABAP environment in a trial system. Next, you'll discover how to adapt your custom application without writing a single line of code. This tutorial guides you through key user adaptation features, including popular standard features like moving, adding, and removing UI elements (fields, sections, etc.), as well as renaming them. You'll also explore the latest complex changes made easy, such as modifying manifest properties and OData annotations, all while staying no-code.
+
 
 ## Requirements
+1) SAP BTP Trial account (https://developers.sap.com/tutorials/hcp-create-trial-account.html), see also chapter 1.0
+2) SAP BTP, ABAP environment subscription in Trial (https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
+3) Optional for integration with Git: GitHub account and repository for the exercise (https://github.com/)
 
-## Download and Installation
 
 ## Known Issues
+No known issues.
 <!-- You may simply state "No known issues. -->
 
 ## How to obtain support
