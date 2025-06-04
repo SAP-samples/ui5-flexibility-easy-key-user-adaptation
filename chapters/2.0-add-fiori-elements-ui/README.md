@@ -20,7 +20,7 @@
 3. Click on the link **Open a new browser page to generate your SSO passcode**
 You will be prompted to login to your identity provider. If you are already logged in, you will see a temporary passcode which you can copy.
 
-4. Enter the SSO Paccode and click on **Sign In**
+4. Enter the SSO Passcode and click on **Sign In**
 
 5. Select your **Cloud Foundry Target** by choosing the CF org and space of your trial account.
 
