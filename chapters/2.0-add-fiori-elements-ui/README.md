@@ -72,8 +72,10 @@ You will be prompted to login to your identity provider. If you are already logg
 7. In the FLP configuration step:
 
     Enter a Semantic Object.
-    Enter a **unique** Action
-    Enter a Title
+   
+    Enter a **unique** Action.
+   
+    Enter a Title.
     <img src="img/FLPConfig.png" width="900">
 
 
