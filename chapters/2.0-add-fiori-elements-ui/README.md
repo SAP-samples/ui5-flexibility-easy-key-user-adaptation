@@ -22,7 +22,7 @@ You will be prompted to login to your identity provider. If you are already logg
 
 4. Enter the SSO Passcode and click on **Sign In**
 
-5. Select your **Cloud Foundry Target** by choosing the CF org and space of your trial account.
+5. Select your **Cloud Foundry Target** by choosing the CF org and space of your trial account, and click "Apply".
 
 
 ## 2. Generate the UI with an SAP Fiori Elements template
