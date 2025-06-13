@@ -1,0 +1,30 @@
+/*!
+ * ${copyright}
+ */
+
+sap.ui.define([], function() {
+	"use strict";
+
+	return {
+		actions: {
+			settings: {
+				icon: "sap-icon://popup-window",
+				additionalInfoKey: "",
+				name: "my fancy action",
+
+				async handler(oSelectedElement) {
+					const sText = await prompt("Please enter a name.", "");
+					return [{
+						changeSpecificData: {
+							changeType: "myChangeType",
+							content: {
+								text: sText
+							}
+						},
+						selectorControl: oSelectedElement
+					}];
+				}
+			}
+		}
+	};
+});
