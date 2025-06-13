@@ -10,13 +10,12 @@ sap.ui.define([], function() {
 			settings: {
 				icon: "sap-icon://popup-window",
 				additionalInfoKey: "",
-				name: "my fancy action",
-
+				name: "my custom action",
 				async handler(oSelectedElement) {
 					const sText = await prompt("Please enter a name.", "");
 					return [{
 						changeSpecificData: {
-							changeType: "myChangeType",
+							changeType: "createNewButton",
 							content: {
 								text: sText
 							}

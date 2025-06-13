@@ -6,11 +6,11 @@ sap.ui.define([], function() {
 	"use strict";
 
 	return {
-		myChangeType: {
+		createNewButton: {
 			changeHandler: {
 				async applyChange(oChange, oControl, mPropertyBag) {
 					const oParent = mPropertyBag.modifier.getParent(oControl);
-					const aItems = oParent.getAggregation("items");
+					const aItems = await mPropertyBag.modifier.getAggregation(oParent, "items");
 					const iNewIndex = aItems.length;
 					const oNewButton = await mPropertyBag.modifier.createControl(
 						"sap.m.Button",
@@ -33,9 +33,9 @@ sap.ui.define([], function() {
 						buttonText: mSpecificChangeInfo.text
 					});
 				},
-				revertChange(oChange, oControl, mPropertyBag) {
+				async revertChange(oChange, oControl, mPropertyBag) {
 					const oParent = mPropertyBag.modifier.getParent(oControl);
-					const aItems = oParent.getAggregation("items");
+					const aItems = await mPropertyBag.modifier.getAggregation(oParent, "items");
 					aItems.find(item => item.getId() === oChange.getRevertData().newControlId).destroy();
 				}
 			}
