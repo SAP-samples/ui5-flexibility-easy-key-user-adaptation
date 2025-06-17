@@ -1,24 +1,24 @@
-# Create custom Key User Action / Change Handler
+# Create Custom Key User Action / Change Handler
 
 ## Add a custom section to the application
 
-The easiest way to add some custom flexibility behavior to certain controls is to add instance specific designtime and flexibility information to one control instance. In Fiori Elements applications all controls are generated, so to have access to a control instance in XML we need to use an extension point and create own controls there. This can easily be done using the Fiori Tools Guided Development. For the Object Page there is the option 'Add a Custom Section to an Object Page Using Extensions'.
+The easiest way to add some custom flexibility behavior to certain controls is to add instance specific designtime and flexibility information to a particular control instance. In Fiori elements applications all controls are generated according to the metadata provided, so we will use an extension point to create additional controls there. This can easily be done using the Fiori Tools' 'Guided Development'. For the Object Page there is an option to 'Add a Custom Section to an Object Page Using Extensions'.
 
 ![Add Custom Section Generator](img/AddCustomSection.png)
 
-In the first step you need to choose a name for the new fragment and click on the 'Create a File and Insert Snippet' button. The next step is more complex, first you need to select an Entity Set and the Extension Point. As Entity Set use 'Root', for Extension Point 'Before'. Then you can configure where the new Section should be placed in the Object Page, to have it as the first Section select 'Nested Tabs' and enter a title (e.g. 'CustomButton'). After inserting the snippet the new section can be seen in the Preview of the application.
+For step 1 you need to choose a name for the new fragment and click on the 'Create a File and Insert Snippet' button. Step 2 requires you to both select an Entity Set and Extension Point. For _Entity Set_ specify 'Root', for _Extension Point_ 'Before'. Next, select the section relative to which (in the current selection: before) the new section will be placed. For our example, select 'Nested Tabs (#NestedTabs)' for _Related Facets Annotation Term_. After entering the _Section Title_ follwed by clicking _Insert Snippet_, the new section can be seen in the preview of the application.
 
 ## Create instance specific designtime metadata
 
-All actions that can be triggered by the Key User are defined in designtime metadata files, with almost all controls contributing such metadata by default. This metadata can also be defined for only one instance of a control, directly in the XML.
+All actions that can be triggered by the Key User are defined in designtime metadata files, with almost all controls contributing such metadata. This metadata can also be defined for only one instance of a control, directly in the XML.
 
-```JS
+```XML
 	<Button xmlns:dt="sap.ui.dt" id="customButton" dt:designtime="project1/ext/CustomButton.designtime" />
 ```
 
-This metadata file can hold much more information than only the actions, see [here](https://ui5.sap.com/#/topic/5866a476fa4445ec953181354b383097). For our scenario we will use the [settings actions](https://ui5.sap.com/#/topic/5483068f017049339e6a9e25f89f7074), which can be used for any action. In this action a handler function must be defined, which returns the necessary data to create a Key User change.
+This metadata file can hold much more information than only the actions, see [here](https://ui5.sap.com/#/topic/5866a476fa4445ec953181354b383097). For our scenario we will use the [settings action](https://ui5.sap.com/#/topic/5483068f017049339e6a9e25f89f7074), which can be used for any type of change. For this action a handler function must be defined, which returns the  data needed to create a Key User change.
 
-The following sample creates an action with a specific name and icon, creates a change of type 'createNewButton' and passes some information along with it.
+The following sample creates an action with a specific name and icon, creates a change of type 'createNewButton' and passes some information along with it. It should be stored in the _ext_ folder of your project, under the name CustomButton.designtime.js.
 
 ```js
 {
@@ -47,17 +47,18 @@ For this action to work we now need to create a change handler for that change t
 
 ## Create instance specific change handler
 
-Change Handlers can be either directly defined in the library.js or, for convenience, in flexibility files that are referenced in the library. But there is, same as with the designtime, the option to create instance specific change handlers:
+Change handlers can either be defined directly in library.js or, for convenience, in flexibility files that are referenced from library.js. Analogously to the designtime, it is possible to define instance-specific change handlers. Update your _Button_ definition to include a reference to _fl:flexibility_:
 
 ```js
 	<Button xmlns:fl="sap.ui.fl" id="customButton" fl:flexibility="project1/ext/custom.flexibility" />
 ```
 
-The reference file then contains the new change handler that is called during change creation and every time the change gets applied. The 3 necessary functions of a change handler are 'applyChange', 'revertChange' and 'completeChangeContent', but there are more optional functions (see [here](https://ui5.sap.com/#/topic/6a346a293c724bd4bc33f0df92706008)).
+The reference file then contains the new change handler that is called during change creation and every time the change is applied (usually once per application start, or when switching variants). The three functions a change handler is required to have are 'applyChange', 'revertChange' and 'completeChangeContent', but there are more optional functions (see [here](https://ui5.sap.com/#/topic/6a346a293c724bd4bc33f0df92706008)).
 
-First the completeChangeContent function is called during the change creation process. There any specific content for the change needs to be saved to the change content, which will also be persisted in the backend. The other function are always called once the change gets applied or reverted. The applyChange function creates a new button control with the given name and adds it to the parent aggregation. To enable undo the necessary information to revert the change must be saved to the change instance. The revert then destroys the created control.
+First, the 'completeChangeContent' function is called during the change creation process. There, any specific content for the change needs to be saved to the change's 'content' property, which will also be persisted in the backend. The other functions are called when the change is applied or reverted. The 'applyChange' function creates a new control of type 'sap.m.Button' with the given name and adds it to the parent aggregation. To enable _undo_, the necessary information to revert the change must be saved to the change instance. The revert then destroys the created control.
 
-Changes can be applied both during XML Preprocessing and on a proper UI5 control, which is why the passed control and the view is not always the same. To overcome this difference the mPropertyBag passed to the change handler contains a module that always works in the given scenario (mPropertyBag.modifier). There many functions that manipulate controls or return information are available, such as createControl or getParent.
+Changes can be applied both during XML Preprocessing and on an instantiated SAPUI5 control, which is why the passed control and the view are not always the same. To overcome this difference, the 'mPropertyBag' parameter passed to the change handler contains a module that serves as an abstraction to the underlying view or XML (mPropertyBag.modifier). There, many functions to manipulate controls or retrieve information are available, e.g., ‘createControl' or 'getParent'.
+Save the following to your _ext_ folder under the name 'custom.flexibility.js':
 
 ```js
 {
