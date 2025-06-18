@@ -28,7 +28,7 @@ All actions that can be triggered by the Key User are defined in designtime meta
 	<Button xmlns:dt="sap.ui.dt" id="customButton" dt:designtime="<module_name>/ext/CustomButton.designtime" />
 ```
 
-> **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
+> **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](/chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
 
 This metadata file can hold much more information than only the actions, see [here](https://ui5.sap.com/#/topic/5866a476fa4445ec953181354b383097). For our scenario we will use the [settings action](https://ui5.sap.com/#/topic/5483068f017049339e6a9e25f89f7074), which can be used for any type of change. For this action a handler function must be defined, which returns the data needed to create a Key User change.
 
@@ -58,7 +58,7 @@ The following sample creates an action with a specific name and icon, creates a 
 }
 ```
 
-This snippet must be wrapped in a call to `sap.ui.define` and written to a file named _CustomButton.designtime.js_ in the _ext_ folder of your project. The full example can be found [here](chapters/3.1-add-custom-section/src/CustomButton.designtime.js).
+This snippet must be wrapped in a call to `sap.ui.define` and written to a file named _CustomButton.designtime.js_ in the _ext_ folder of your project. The full example can be found [here](/chapters/3.1-add-custom-section/src/CustomButton.designtime.js).
 
 For this action to work we now need to create a change handler for that change type.
 
@@ -70,7 +70,7 @@ Change handlers can either be defined directly in library.js or, for convenience
 	<Button xmlns:fl="sap.ui.fl" id="customButton" fl:flexibility="<module_name>/ext/custom.flexibility" />
 ```
 
-> **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
+> **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](/chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
 
 The reference file then contains the new change handler that is called during change creation and every time the change is applied (usually once per application start, or when switching variants). The three functions a change handler is required to have are 'applyChange', 'revertChange' and 'completeChangeContent', but there are more optional functions (see [here](https://ui5.sap.com/#/topic/6a346a293c724bd4bc33f0df92706008)).
 
@@ -118,6 +118,6 @@ Changes can be applied both during XML Preprocessing and on an instantiated SAPU
 }
 ```
 
-This snippet must be wrapped in a call to `sap.ui.define` and written to a file named _CustomButton.flexibility.js_ in the _ext_ folder of your project. The full example can be found [here](chapters/3.1-add-custom-section/src/CustomButton.flexibility.js).
+This snippet must be wrapped in a call to `sap.ui.define` and written to a file named _CustomButton.flexibility.js_ in the _ext_ folder of your project. The full example can be found [here](/chapters/3.1-add-custom-section/src/CustomButton.flexibility.js).
 
-Having created both the change handler (_ext/CustomButton.flexibility.js_), and the instance-specific designtime (_ext/CustomButton.designtime.js_), the finished fragment should look like [this](chapters/3.1-add-custom-section/src/CustomButton.fragment.xml).
+Having created both the change handler (_ext/CustomButton.flexibility.js_), and the instance-specific designtime (_ext/CustomButton.designtime.js_), the finished fragment should look like [this](/chapters/3.1-add-custom-section/src/CustomButton.fragment.xml).
