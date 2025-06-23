@@ -76,7 +76,7 @@ The reference file then contains the new change handler that is called during ch
 
 First, the 'completeChangeContent' function is called during the change creation process. There, any specific content for the change needs to be saved to the change's 'content' property, which will also be persisted in the backend. The other functions are called when the change is applied or reverted. The 'applyChange' function creates a new control of type 'sap.m.Button' with the given name and adds it to the parent's 'items' aggregation. To enable _undo_, the necessary information to revert the change must be saved to the change instance. The revert then destroys the created control.
 
-Changes can be applied both during XML Preprocessing and on an instantiated SAPUI5 control, which is why the passed control and the view are not always the same. To overcome this difference, the 'mPropertyBag' parameter passed to the change handler contains a module that serves as an abstraction to the underlying view or XML (mPropertyBag.modifier). There, many functions to manipulate controls or retrieve information are available, e.g., ‘createControl' or 'getParent'.
+Changes can be applied both during XML Preprocessing and on an instantiated SAPUI5 control, which is why the passed control and the view are not always the same. To overcome this difference, the 'mPropertyBag' parameter passed to the change handler contains a module (mPropertyBag.modifier) that serves as an abstraction to the underlying XML view or UI5 control. There, many functions to manipulate controls or retrieve information are available, e.g., ‘createControl' or 'getParent'.
 
 
 ```js
