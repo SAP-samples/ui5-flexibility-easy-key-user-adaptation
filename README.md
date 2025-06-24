@@ -1,4 +1,4 @@
-# UI5con 2025 - Intuitive UI Enhancements: Easy SAPUI5 Key User Adaptation
+# [WORK IN PROGRESS] UI5con 2025 - Intuitive UI Enhancements: Easy SAPUI5 Key User Adaptation
 <!-- Please include descriptive title -->
 
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:
@@ -23,7 +23,7 @@ No known issues.
 
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
- 
+
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
 
 ## Contributing
