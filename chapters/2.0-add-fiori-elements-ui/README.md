@@ -12,7 +12,7 @@
 2. Enter your Cloud Foundry Endpoint
     <img src="img/CFLogin.png" width="900">
 
-    You can find your endpoint inside the cockpit. Navigate to your **Global Account** > **Trial Subaccount** under **Cloud Foundry Environment**, for example 
+    You can find your endpoint inside the cockpit. Navigate to your **Global Account** > **Trial Subaccount** under **Cloud Foundry Environment**, for example
     https://api.cf.us10-001.hana.ondemand.com
 
     <img src="img/SubaccountAPIendpoint.png" width="900">
@@ -43,15 +43,15 @@ You will be prompted to login to your identity provider. If you are already logg
     In the Data source dropdown menu, select **Connect to a System**.
     In the System dropdown menu, select **Cloud Foundry ABAP environment on SAP Business Technology Platform**
     In the Service dropdown, select **/DMO/UI_FEATURESHOWCASEAPP**
-    
-    > [!IMPORTANT]   
+
+    > [!IMPORTANT]
     > Make sure you have logged into your CF environment, see step 1. Otherwise you will get an error at this point
 
     In the background a new destination "default_abap-trial" to your BTP ABAP environment will be created.
 
     <img src="img/DataSource.png" width="900">
 
-4. In the **Entity Selection** step: 
+4. In the **Entity Selection** step:
    Keep everything as is and click on **Next**
 
 5. In the **Project Attributes** step:
@@ -61,7 +61,7 @@ You will be prompted to login to your identity provider. If you are already logg
     <img src="img/ProjectAttributes.png" width="900">
 
 6. In the **Deployment Configuration** step:
-   
+
    Enter a unique **SAPUI5 ABAP Repository**.
 
    For the package use **Z_UI5CON**.
@@ -72,16 +72,30 @@ You will be prompted to login to your identity provider. If you are already logg
 7. In the FLP configuration step:
 
     Enter a Semantic Object.
-   
+
     Enter a **unique** Action.
-   
+
     Enter a Title.
     <img src="img/FLPConfig.png" width="900">
 
+## 3. Create a run configuration supporting key user adaptation
 
-## 3. Preview your application
+By default, the application previews do not contain the plugin required for UI adaptation. To see how any changes in the application appear to the key user, we want to be able to test this in the preview without having to deploy the application.
 
-Open Application Info > Preview Application, it should look like this:
+For this, open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows), and scroll to the *scripts* section/object.
+At the end, insert another run script, called "key user".
 
-<img src="img/PreviewApp.png" width="900">
+```json
+"key-user": "fiori run --open \"preview.html?fiori-tools-rta-mode=false#app-preview\""
+```
+
+This script can now be used to preview the application, with UI adaptation started automatically.
+
+## 4. Preview your application with key user adaptation
+
+Open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows), hover over the newly-added *key-user* script, then select *Run script* in the popover.
+
+The application preview will open in a new tab. It should look like this:
+
+<img src="img/KeyUserAppPreview.png" width="900">
 
