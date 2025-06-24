@@ -82,7 +82,7 @@ You will be prompted to login to your identity provider. If you are already logg
 
 By default, the application previews do not contain the plugin required for UI adaptation. To see how any changes in the application appear to the key user, we want to be able to test this in the preview without having to deploy the application.
 
-For this, open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows, then start typing the file name), and scroll to the *scripts* section/object.
+For this, open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows), and scroll to the *scripts* section/object.
 At the end, insert another run script, called "key user".
 
 ```json
@@ -93,7 +93,7 @@ This script can now be used to preview the application, with UI adaptation start
 
 ## 4. Preview your application with key user adaptation
 
-Open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows, then start typing the file name), hover over the newly-added *key-user* script, then select *Run script* in the popover.
+Open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows), hover over the newly-added *key-user* script, then select *Run script* in the popover.
 
 The application preview will open in a new tab. It should look like this:
 
