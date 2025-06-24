@@ -91,7 +91,7 @@ At the end, insert another run script, called "key user".
 
 This script can now be used to preview the application, with UI adaptation started automatically.
 
-## 4. Preview your application
+## 4. Preview your application with key user adaptation
 
 Open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows, then start typing the file name), hover over the newly-added *key-user* script, then select *Run script* in the popover.
 
