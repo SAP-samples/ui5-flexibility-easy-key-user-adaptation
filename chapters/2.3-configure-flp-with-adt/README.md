@@ -2,7 +2,7 @@
 
 ## 1. Find the new content
 
-In ABAP development tools, locate the package which you have used to deploy your app (Z_UICON) and refresh the content list.
+In ABAP development tools, locate the package which you have used to deploy your app (Z_UI5CON) and refresh the content list.
 
 You will find some new content created by the deployment:
 
