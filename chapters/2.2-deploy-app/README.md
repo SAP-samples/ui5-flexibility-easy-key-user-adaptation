@@ -1,4 +1,4 @@
-# Deploy you SAP Fiori elements application to your BTP ABAP environment trial account
+# Deploy your SAP Fiori elements application to your BTP ABAP environment trial account
 
 In this chapter you will build and deploy your SAP Fiori elements application to your prepared trial SAP BTP, ABAP environment.
 
