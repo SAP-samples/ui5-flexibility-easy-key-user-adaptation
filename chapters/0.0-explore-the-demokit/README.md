@@ -1,15 +1,19 @@
-# Chapter 0.0 - Key User Adaptation in the Demo Kit
+# Key User Adaptation in the demo kit
 
 By the end of this chapter, you will be familiar with the most common actions of key user adaptation and the tooling itself.
 
 ## 1. Open an application in the demo kit
 
 Start the [Key User Adaptation for Fiori elements](https://ui5.sap.com/test-resources/sap/ui/demoapps/demokit/rta/fe/test/index.html?sap-ui-theme=sap_horizon#masterDetail-display) app.
-Start key user adaptation by selecting the "Me" area (represented by the circle named "JD" (John Doe)) in the top-right corner, then selecting "Adapt UI" in the resulting dropdown.
+Start key user adaptation by selecting the user menu (represented by the circle named "JD" (John Doe)) in the top-right corner, then selecting "Adapt UI" in the resulting dropdown.
+
+<img src="img/AdaptUI.png" width="900">
 
 ## 2. Start the UI Adaptation tour
 
 The UI Adaptation tour provides a quick overview of the most important features in the toolbar. Trigger it via the "burger menu", then go through the individual items to learn more.
+
+<img src="img/UIAdaptationTour.png" width="900">
 
 The entries in the tour are system-dependend - one important feature (transporting changes) is not available in the demokit, and will be explained later.
 
