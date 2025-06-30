@@ -1,4 +1,4 @@
-# Chapter 1.0 - Preparing the Development Environment
+# Preparing the Development Environment
 
 By the end of this chapter, you'll have your development environment ready to start developing your flex-enabled SAPUI5 application.
 
