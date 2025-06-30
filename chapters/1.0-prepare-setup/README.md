@@ -18,7 +18,7 @@ To create a trial account please follow [this tutorial](https://developers.sap.c
 <img src="img/CreateTrialAccount.png" width="400">
 
 
-### 2. Create an SAP BTP ABAP Environment Trial User and Set Up you SAP Business Application Studio
+### 2. Create an SAP BTP ABAP Environment Trial User and Set Up your SAP Business Application Studio
 
 Next you need to prepare your environment, use the corresponding tutorial [Create an SAP BTP ABAP Environment Trial User](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
