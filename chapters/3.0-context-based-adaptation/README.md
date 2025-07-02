@@ -6,20 +6,23 @@
 
 Imagine you're a key user for your favorite company. The IT department decides that the app you've created has too many details. They need an overview specifically for management. All other users of the application should still be able to see the details.
 
-What do you do? 
+What do you do?
 
 1. Make all necessary changes to achieve a simplified UI
+
     <img src="img/ReducedChanges.png" width="300">
 
 2. Save your changes in a new adaptation. Assign the IT Manager role.
 
     2.1 In the toolbar, click on the dropdown labeled "Adapting for 'All Users'". Then, click on "Save as Adaptation."
+
     <img src="img/SaveAsAdaptation.png" width="300">
 
     2.2 Add the mandatory *title*, such as "Manager Overview." This title is visible to you and other key users, but not to any end users.
     <img src="img/AddTitle.png" width="300">
 
     2.3 To add a role, click on the "Add Role" button. This action opens a new selection dialog that displays all available roles in the system. Locate and click on the "BR_IT_PROJECT_MANAGER" role, then click "Select".
+
     <img src="img/AddRole.png" width="300">
 
     2.4 Save your newly-created role-based adaptation. You'll notice that the user interface reloads, and the toolbar now reads "Adapting for 'Manager Overview'." This indicates the process is successful.
