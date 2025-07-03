@@ -23,6 +23,8 @@ Imagine the following scenario: You're a key user, and the end user council has 
 
 <img src="img/TargetPicture.png" width="900">
 
+It seems that all changes to be made concern the object page of the application. To get there, select *Navigation* from the toolbar, then select any entry from the detail page. Once the object page is visible, select *Adaptation* from the toolbar.
+
 Elements that are crossed out are no longer required in the UI. Others are to be moved, while some elements are to be added to or grouped in the UI.
 
 Hint: The new section ("Price (EUR)") is realized via an iframe, using the following URL: https://themoneyconverter.com/MoneyConverter?from=USD&to=EUR&amount=XXX where "XXX" is to be replaced by the product's price.
@@ -32,7 +34,11 @@ Hint: The new section ("Price (EUR)") is realized via an iframe, using the follo
 * The "Availability" header element can be removed by (right-)clicking on the element, then selecting "Remove" from the context menu.
 * The "Base Unit" entry can be removed by (right-)clicking on the element, then selecting "Remove" from the context menu. Since this field is marked as "mandatory", its removal has to be confirmed via the popup.
 * To change the name of the "Inventory Information" section to "Inventory", (right-)click on the section title in the horizontal bar, then select "Rename" from the context menu. In the resulting dialog, adapt the name accordingly.
-* To create a new form group called "Dimensions", (right-)click somewhere in the "Technical Data" form, then select "Create: Group" from the context menu. Name the new group appropriately via the resulting dialog. Move the three corresponding fields, "Height", "Width", and "Depth" to the newly-created group via drag and drop.
-* To create the "Pricing" Group, repeat the last step. Instead of moving existing fields to the new group, (right-)click on the new "Pricing" Group, then select "Add: Field". From the resulting dialog, select "Price per Unit" and "Currency". Afterwards, rename the "Price per Unit" field to "Price".
+* To create a new form group called "Dimensions", (right-)click somewhere in the "Technical Data" form (not on the title in the anchor bar), then select "Create: Group" from the context menu. Name the new group appropriately via the resulting dialog. Move the three corresponding fields, "Height", "Width", and "Depth" to the newly-created group via drag and drop.
+* To create the "Pricing" Group, repeat the last step. Instead of moving existing fields to the new group, (right-)click on the new "Pricing" Group, then select "Add: Field". From the resulting dialog, select "Price per Unit" and "Currency". Afterwards, rename the "Price per Unit" field to "Price" (this requires a reload).
 * To switch the order of the "Technical Data" and "Reviews" sections, simply drag one of the two around in the horizontal bar containing the section titles.
 * To add the iframe named "Price (EUR)", (right-)click somewhere in the blank space in the right to the header elements OR on a section title, then select "Embed content: as section" from the context menu. As *title*, enter "Price (EUR)", for *URL* enter "https://themoneyconverter.com/MoneyConverter?from=USD&to=EUR&amount=" and click on the "Price" entry in the *Available Values* to append the {Price} template variable to the URL. The resulting URL should be https://themoneyconverter.com/MoneyConverter?from=USD&to=EUR&amount={Price}. Verify the URL is correct by triggering the *Preview*. Feel free to adapt the iframe dimensions by trying different values for *width* and *height*.
+
+To make these changes also visible for the end user, click the activate button in the toolbar and provide a name for the new version.
+
+Continue to [Chapter 1.0 - Preparing the Development Environment](/chapters/1.0-prepare-setup)

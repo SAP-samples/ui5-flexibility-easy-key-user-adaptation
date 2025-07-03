@@ -121,3 +121,5 @@ Changes can be applied both during XML Preprocessing and on an instantiated SAPU
 This snippet must be wrapped in a call to `sap.ui.define` and written to a file named _CustomButton.flexibility.js_ in the _ext_ folder of your project. The full example can be found [here](/chapters/3.1-add-custom-section/src/CustomButton.flexibility.js).
 
 Having created both the change handler (_ext/CustomButton.flexibility.js_), and the instance-specific designtime (_ext/CustomButton.designtime.js_), the finished fragment should look like [this](/chapters/3.1-add-custom-section/src/CustomButton.fragment.xml).
+
+Continue to [Chapter 2.2 - Deploy your SAP Fiori elements application to your BTP ABAP environment trial account](/chapters/2.2-deploy-app)

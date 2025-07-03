@@ -19,3 +19,5 @@ SAP Business Application Studio will create the space for you. Once it is ```RUN
 
 
 Now you're ready to get started!
+
+Continue to [Chapter 2.0 - Add SAP Fiori Elements UIs](/chapters/2.0-add-fiori-elements-ui)

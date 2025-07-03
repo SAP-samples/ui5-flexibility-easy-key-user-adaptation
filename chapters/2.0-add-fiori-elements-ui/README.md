@@ -99,3 +99,4 @@ The application preview will open in a new tab. It should look like this:
 
 <img src="img/KeyUserAppPreview.png" width="900">
 
+Continue to [Chapter 2.1 - Create Custom Key User Action / Change Handler](/chapters/2.1-add-custom-section)
