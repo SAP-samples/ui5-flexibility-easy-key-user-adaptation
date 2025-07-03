@@ -35,7 +35,7 @@ To deploy SAPUI5 applications to the SAP BTP, ABAP environment and them in the S
 
 ### 1. Download ABAP Development Tools (ADT)
 
-Download and install the latest ABAP Development Tools (ADT) by following the steps in this link: [https://tools.hana.ondemand.com/#abap](https://tools.hana.ondemand.com/#abap)
+Download and install the latest ABAP Development Tools (ADT) by following the steps in this link: [https://developers.sap.com/tutorials/abap-install-adt.html](https://developers.sap.com/tutorials/abap-install-adt.html)
 
 ### 2. Connect your SAP BTP, ABAP environment with your ABAP Development Tools
 
