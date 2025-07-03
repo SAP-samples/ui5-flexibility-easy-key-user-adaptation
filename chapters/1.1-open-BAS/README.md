@@ -19,5 +19,3 @@ SAP Business Application Studio will create the space for you. Once it is ```RUN
 
 
 Now you're ready to get started!
-
-Continue to [Chapter 1.3 - Create a package and transport in ADT](/chapters/1.3-create-package-adt/)
