@@ -1,4 +1,4 @@
-# [WORK IN PROGRESS] UI5con 2025 - Intuitive UI Enhancements: Easy SAPUI5 Key User Adaptation
+# [WORK IN PROGRESS] UI5con 2025 - Easy Key User Adaptation: From Basics to Custom Key User Actions
 <!-- Please include descriptive title -->
 
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:
