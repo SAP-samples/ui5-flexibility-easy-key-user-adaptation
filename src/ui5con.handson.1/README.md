@@ -3,17 +3,23 @@
 To use this application for the tutorial you have to 
 
 1. replace the ID in all files!
-   In the search field of your IDE, replace ui5con.handson.<ID> and ui5con/handson/<ID> with a unique number
-   <img src="../../img/replace-id-dots.png" width="900">
-   <img src="../../img/replace-id-slash.png" width="900">
+   
+   In the search field of your IDE, replace ui5con.handson.<ID> and ui5con/handson/\<ID> with a unique number
+
+   <img src="../../img/replace-id-dots.png" width="300">
+   <img src="../../img/replace-id-slash.png" width="300">
 
 2. in your ui5-x.yaml files replace:
-   <DESTINATION> with the destination name.  Go to your BTP **Global Account** > **Trial Subaccount** > ** Connectivity** > Destinations (New) and copy the "Name".
-   <ABAP_TRIAL_URL> with the actual trial URL. You can find it in the same Destination under "URL".
+   
+   2.1. \<DESTINATION> with the destination name.  Go to your BTP **Global Account** > **Trial Subaccount** > **Connectivity** > Destinations (New) and copy the "Name".
+   
+   2.2 <ABAP_TRIAL_URL> with the actual trial URL. You can find it in the same Destination under "URL".
 
-3. in your ui5-deploy.yaml replace
-   line 24 - <TRANSPORT> with the transport you can find in the ADT under **Transport Organizer**
-   line 21 - Z_UI5CON_<ID> with a unqiue name
+3. in your ui5-deploy.yaml replace:
+   
+   3.1 line 24 - <TRANSPORT> with the transport you can find in the ADT under **Transport Organizer**
+
+   3.2 line 21 - Z_UI5CON_\<ID> with a unqiue name
    
 
 ## ui5con.handson.1
