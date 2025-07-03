@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: ui5con.handson.<ID>
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: <DESTINATION>
+          url: <ABAP_TRIAL_URL>
+          scp: true
+        app:
+          name: Z_UI5CON_<ID>
+          description: ui5con 2025 handson demo
+          package: Z_UI5CON
+          transport: <TRANSPORT>
+        exclude:
+          - /test/
