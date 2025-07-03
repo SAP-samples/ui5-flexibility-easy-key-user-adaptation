@@ -14,7 +14,8 @@ You'll learn how to enable your own Fiori elements application for SAPUI5 flexib
 ## Requirements
 1) SAP BTP Trial account (https://developers.sap.com/tutorials/hcp-create-trial-account.html), see also chapter 1.0
 2) SAP BTP, ABAP environment subscription in Trial (https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
-3) Optional for integration with Git: GitHub account and repository for the exercise (https://github.com/)
+3) Download the Eclipse IDE and add the ABAP Development Tools (ADT) Plugin (https://developers.sap.com/tutorials/abap-install-adt.html)
+4) Optional for integration with Git: GitHub account and repository for the exercise (https://github.com/)
 
 
 ## Known Issues
