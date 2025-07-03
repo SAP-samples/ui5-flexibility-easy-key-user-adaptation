@@ -1,25 +1,22 @@
 ## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Tue Jun 03 2025 15:13:36 GMT+0000 (Coordinated Universal Time)|
-|**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.17.6|
-|**Generation Platform**<br>SAP Business Application Studio|
-|**Template Used**<br>List Report Page V4|
-|**Service Type**<br>SAP System (ABAP Environment on SAP Business Technology Platform)|
-|**Service URL**<br><ABAP_TRIAL_URL>sap/opu/odata4/dmo/ui_featureshowcaseapp/srvd/dmo/ui_featureshowcaseapp/0001/|
-|**Module Name**<br>ui5con.handson.<ID>|
-|**Application Title**<br>UI5con Hands On Demo App|
-|**Namespace**<br>|
-|**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.133.4|
-|**Enable Code Assist Libraries**<br>False|
-|**Enable TypeScript**<br>False|
-|**Add Eslint configuration**<br>False|
-|**Main Entity**<br>Root|
-|**Navigation Entity**<br>None|
 
-## ui5con.handson.<ID>
+To use this application for the tutorial you have to 
+
+1. replace the ID in all files!
+   In the search field of your IDE, replace ui5con.handson.<ID> and ui5con/handson/<ID> with a unique number
+   <img src="../../img/replace-id-dots.png" width="900">
+   <img src="../../img/replace-id-slash.png" width="900">
+
+2. in your ui5-x.yaml files replace:
+   <DESTINATION> with the destination name.  Go to your BTP **Global Account** > **Trial Subaccount** > ** Connectivity** > Destinations (New) and copy the "Name".
+   <ABAP_TRIAL_URL> with the actual trial URL. You can find it in the same Destination under "URL".
+
+3. in your ui5-deploy.yaml replace
+   line 24 - <TRANSPORT> with the transport you can find in the ADT under **Transport Organizer**
+   line 21 - Z_UI5CON_<ID> with a unqiue name
+   
+
+## ui5con.handson.1
 
 An SAP Fiori application.
 
