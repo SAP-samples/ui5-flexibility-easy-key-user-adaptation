@@ -1,0 +1,5 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:dt="sap.ui.dt" xmlns:fl="sap.ui.fl">
+	<HBox id="customHBox">
+		<Button id="customButton" text="Create New Button" dt:designtime="ui5con/handson/<ID>/ext/CustomButton.designtime" fl:flexibility="ui5con/handson/<ID>/ext/CustomButton.flexibility" />
+	</HBox>
+</core:FragmentDefinition>
