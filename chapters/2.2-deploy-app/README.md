@@ -32,8 +32,6 @@ When you run the "deploy" command, a terminal appears and runs the build command
 
 Type in "Y" to proceed.
 
-The deployment is now taking place. If it's successful, you'll receive a detailed success message with everything that happened in the backend. Two important pieces of information are:
-
 The deployment is now taking place. If it's successful, you'll receive a detailed success message with everything that occurred in the backend. Two important pieces of information are included:
 
 1. The successful creation of the Fiori Launchpad App Description Item.

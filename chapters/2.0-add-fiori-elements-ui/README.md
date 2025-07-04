@@ -55,9 +55,12 @@ You will be prompted to login to your identity provider. If you are already logg
    Keep everything as is and click on **Next**
 
 5. In the **Project Attributes** step:
-   Select a unique module name.
-   For **Add deployment configuration**, select **Yes**
-   For **Add FLP configuration**, select **Yes**
+   Select a unique **module name**.
+	 > **Hint**: This module name is required in the next chapter, so pick something easy to remember.
+
+   For **Add deployment configuration**, select **Yes**.
+
+   For **Add FLP configuration**, select **Yes**.
     <img src="img/ProjectAttributes.png" width="900">
 
 6. In the **Deployment Configuration** step:
@@ -86,7 +89,7 @@ For this, open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows), and scrol
 At the end, insert another run script, called "key user".
 
 ```json
-"key-user": "fiori run --open \"preview.html?fiori-tools-rta-mode=false#app-preview\""
+"key-user": "fiori run --open \"preview.html?fiori-tools-rta-mode=false&sap-ui-xx-viewCache=false#app-preview\""
 ```
 
 This script can now be used to preview the application, with UI adaptation started automatically.
