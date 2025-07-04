@@ -89,7 +89,7 @@ For this, open *package.json* (Cmd + P on MacOS, Ctrl + P on Windows), and scrol
 At the end, insert another run script, called "key user".
 
 ```json
-"key-user": "fiori run --open \"preview.html?fiori-tools-rta-mode=false#app-preview\""
+"key-user": "fiori run --open \"preview.html?fiori-tools-rta-mode=false&sap-ui-xx-viewCache=false#app-preview\""
 ```
 
 This script can now be used to preview the application, with UI adaptation started automatically.
