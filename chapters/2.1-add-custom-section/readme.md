@@ -15,7 +15,7 @@ Due to the nature of the key user action we'll be implementing, the affected con
 ```xml
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
 	<HBox id="customHBox">
-		<Text text=""/>
+		<Text text="Hello World"/>
 	</HBox>
 </core:FragmentDefinition>
 ```
@@ -71,7 +71,7 @@ For this action to work we now need to create a change handler for that change t
 Change handlers can either be defined directly in library.js or, for convenience, in flexibility files that are referenced from library.js. Analogously to the designtime, it is possible to define instance-specific change handlers. Update your _Button_ definition to include a reference to _fl:flexibility_:
 
 ```js
-	<Button xmlns:fl="sap.ui.fl" id="customButton" fl:flexibility="<module_name>/ext/custom.flexibility" />
+	<Button xmlns:fl="sap.ui.fl" id="customButton" fl:flexibility="<module_name>/ext/CustomButton.flexibility" />
 ```
 
 > **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](/chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
@@ -130,7 +130,7 @@ sap.ui.define([], function() {
 
 Having created both the change handler (_ext/CustomButton.flexibility.js_), and the instance-specific designtime (_ext/CustomButton.designtime.js_), the finished fragment should look like this:
 
-``` xml
+```xml
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:dt="sap.ui.dt" xmlns:fl="sap.ui.fl">
 	<HBox id="customHBox">
 		<Button id="customButton" text="Create New Button" dt:designtime="<module_name>/ext/custom.designtime" fl:flexibility="<module_name>/ext/custom.flexibility" />
