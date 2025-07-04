@@ -133,7 +133,7 @@ Having created both the change handler (_ext/CustomButton.flexibility.js_), and 
 ```xml
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:dt="sap.ui.dt" xmlns:fl="sap.ui.fl">
 	<HBox id="customHBox">
-		<Button id="customButton" text="Create New Button" dt:designtime="<module_name>/ext/custom.designtime" fl:flexibility="<module_name>/ext/custom.flexibility" />
+		<Button id="customButton" text="Create New Button" dt:designtime="<module_name>/ext/CustomButton.designtime" fl:flexibility="<module_name>/ext/CustomButton.flexibility" />
 	</HBox>
 </core:FragmentDefinition>
 ```
