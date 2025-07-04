@@ -9,7 +9,7 @@ To use this application for the tutorial you have to
    <img src="../../img/replace-id-dots.png" width="300">
    <img src="../../img/replace-id-slash.png" width="300">
 
-2. in your ui5-x.yaml files replace:
+2. in your ui5*.yaml files replace:
    
    2.1. \<DESTINATION> with the destination name.  Go to your BTP **Global Account** > **Trial Subaccount** > **Connectivity** > **Destinations (New)** and copy the "Name".
    
