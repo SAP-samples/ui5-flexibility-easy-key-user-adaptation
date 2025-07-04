@@ -35,9 +35,6 @@ This metadata file can hold much more information than only the actions, see [he
 The following sample creates an action with a specific name and icon, creates a change of type 'createNewButton' and passes some information along with it.
 
 ```js
-/*!
- * ${copyright}
- */
 sap.ui.define([], function() {
 	"use strict";
 	return {
@@ -84,9 +81,6 @@ Changes can be applied both during XML Preprocessing and on an instantiated SAPU
 
 
 ```js
-/*!
- * ${copyright}
- */
 sap.ui.define([], function() {
 	"use strict";
 	return {
