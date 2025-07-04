@@ -15,7 +15,6 @@ Due to the nature of the key user action we'll be implementing, the affected con
 ```xml
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
 	<HBox id="customHBox">
-		<Text text=""/>
 	</HBox>
 </core:FragmentDefinition>
 ```
@@ -28,7 +27,7 @@ All actions that can be triggered by the Key User are defined in designtime meta
 	<Button xmlns:dt="sap.ui.dt" id="customButton" dt:designtime="<module_name>/ext/CustomButton.designtime" />
 ```
 
-> **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](/chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
+> **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Fiori Element UIs](/chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
 
 This metadata file can hold much more information than only the actions, see [here](https://ui5.sap.com/#/topic/5866a476fa4445ec953181354b383097). For our scenario we will use the [settings action](https://ui5.sap.com/#/topic/5483068f017049339e6a9e25f89f7074), which can be used for any type of change. For this action a handler function must be defined, which returns the data needed to create a Key User change.
 
@@ -67,7 +66,7 @@ For this action to work we now need to create a change handler for that change t
 Change handlers can either be defined directly in library.js or, for convenience, in flexibility files that are referenced from library.js. Analogously to the designtime, it is possible to define instance-specific change handlers. Update your _Button_ definition to include a reference to _fl:flexibility_:
 
 ```js
-	<Button xmlns:fl="sap.ui.fl" id="customButton" fl:flexibility="<module_name>/ext/custom.flexibility" />
+	<Button xmlns:fl="sap.ui.fl" id="customButton" dt:designtime="<module_name>/ext/CustomButton.designtime" fl:flexibility="<module_name>/ext/CustomButton.flexibility" />
 ```
 
 > **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](/chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
