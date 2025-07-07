@@ -31,7 +31,7 @@ Verify your successful setup by navigating to your **Global Account** > **Trial 
 
 ## Prerequisites for Backend Integration
 
-To deploy SAPUI5 applications to the SAP BTP, ABAP environment and them in the SAP Fiori Launchpad, you need to meet the following requirements:
+To deploy SAPUI5 applications to the SAP BTP, ABAP environment and in the SAP Fiori Launchpad, you need to meet the following requirements:
 
 ### 1. Download ABAP Development Tools (ADT)
 
@@ -42,7 +42,7 @@ Download and install the **latest** ABAP Development Tools (ADT) by following th
 
 ### 2. Connect your SAP BTP, ABAP environment with your ABAP Development Tools
 
-In your ABAP Development Tools create an ABAP Cloud Project by following this tutorial: [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html).
+In your ABAP Development Tools, create an ABAP Cloud Project by following this tutorial: [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html).
 
 
 Continue to [Chapter 1.1 - Create a Dev Space in your SAP Business Application Studio](/chapters/1.1-open-BAS)
