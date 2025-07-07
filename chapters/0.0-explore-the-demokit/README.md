@@ -19,11 +19,11 @@ The entries in the tour are system-dependend - one important feature (transporti
 
 ## 3. Try to achieve a target picture
 
-Imagine the following scenario: You're a key user, and the end user council has decided that one of the application you're responsible for needs an overhaul. They've summarized the changes in a screenshot for your convenience.
+Imagine the following scenario: you're a key user, and the end user council has decided that one of the application you're responsible for needs an overhaul. They've summarized the changes in a screenshot for your convenience.
 
 <img src="img/TargetPicture.png" width="900">
 
-It seems that all changes to be made concern the object page of the application. To get there, select *Navigation* from the toolbar, then select any entry from the detail page. Once the object page is visible, select *Adaptation* from the toolbar.
+It seems that all changes to be made concern the object page of the application. To get there, select *Navigation* from the toolbar, then select any entry from the table. Once the object page is visible, select *Adaptation* from the toolbar.
 
 Elements that are crossed out are no longer required in the UI. Others are to be moved, while some elements are to be added to or grouped in the UI.
 
