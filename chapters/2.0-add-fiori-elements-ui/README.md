@@ -43,18 +43,17 @@ You will be prompted to login to your identity provider. If you are already logg
     In the Data source dropdown menu, select **Connect to a System**.
     In the System dropdown menu, select **Cloud Foundry ABAP environment on SAP Business Technology Platform**
     In the Service dropdown, select **/DMO/UI_FEATURESHOWCASEAPP**
+	
+> [!IMPORTANT]
+> Make sure you have logged into your CF environment, see step 1. Otherwise you will get an error at this point
 
-    > [!IMPORTANT]
-    > Make sure you have logged into your CF environment, see step 1. Otherwise you will get an error at this point
-
-    In the background a new destination "default_abap-trial" to your BTP ABAP environment will be created.
-
+4. In the background a new destination "default_abap-trial" to your BTP ABAP environment will be created.
     <img src="img/DataSource.png" width="900">
 
-4. In the **Entity Selection** step:
+5. In the **Entity Selection** step:
    Keep everything as is and click on **Next**
 
-5. In the **Project Attributes** step:
+6. In the **Project Attributes** step:
    Select a unique **module name**.
 	 > **Hint**: This module name is required in the next chapter, so pick something easy to remember.
 
@@ -63,7 +62,7 @@ You will be prompted to login to your identity provider. If you are already logg
    For **Add FLP configuration**, select **Yes**.
     <img src="img/ProjectAttributes.png" width="900">
 
-6. In the **Deployment Configuration** step:
+7. In the **Deployment Configuration** step:
 
    Enter a unique **SAPUI5 ABAP Repository**.
 
@@ -72,7 +71,7 @@ You will be prompted to login to your identity provider. If you are already logg
    For the transport request select **Create new** from the dropdown
     <img src="img/Deployment.png" width="900">
 
-7. In the FLP configuration step:
+8. In the **FLP configuration** step:
 
     Enter a Semantic Object.
 
