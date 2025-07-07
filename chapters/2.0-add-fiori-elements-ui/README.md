@@ -81,6 +81,12 @@ You will be prompted to login to your identity provider. If you are already logg
     Enter a Title.
     <img src="img/FLPConfig.png" width="900">
 
+	> **Hint**: If your current SAP Business Application Studio dev space already contains an opened workspace, you will be prompted about the next step:
+
+	> <img src="img/PostGenerationPopup.png" width="400">
+
+	> In this case, select *Open folder*.
+
 ## 3. Create a run configuration supporting key user adaptation
 
 By default, the application previews do not contain the plugin required for UI adaptation. To see how any changes in the application appear to the key user, we want to be able to test this in the preview without having to deploy the application.
