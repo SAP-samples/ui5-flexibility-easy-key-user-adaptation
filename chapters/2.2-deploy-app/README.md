@@ -1,6 +1,6 @@
 # Deploy your SAP Fiori elements application to your BTP ABAP environment trial account
 
-In this chapter you will build and deploy your SAP Fiori elements application to your prepared trial SAP BTP, ABAP environment.
+In this chapter, you will build and deploy your SAP Fiori elements application to your prepared trial SAP BTP, ABAP environment.
 
 
 ## 1. Prerequisites
@@ -30,7 +30,7 @@ When you run the "deploy" command, a terminal appears and runs the build command
 
 <img src="img/TerminalBuildOutput.png" width="800">
 
-Type in "Y" to proceed.
+Type "Y" to proceed.
 
 The deployment is now taking place. If it's successful, you'll receive a detailed success message with everything that occurred in the backend. Two important pieces of information are included:
 
@@ -38,6 +38,7 @@ The deployment is now taking place. If it's successful, you'll receive a detaile
 2. The "Deployment Successful" message.
 
 Please note that the message below pertains to a re-deployment, not a first-time deployment. Therefore, the message indicates that the items were updated, not created.
+
 <img src="img/TerminalDeployOutput.png" width="800">
 
 Continue to [Chapter 2.3 - Add your application to a catalog in ABAP Development Tools](/chapters/2.3-configure-flp-with-adt)
