@@ -8,7 +8,7 @@ UI5 flexibility is offered for multiple personas, among them **developer** and *
 
 ### Precedence
 
-All that is to say, that changes in higher layers have **precedence** over the same changes in lower layers - the rational is that the higher the layer, the closer the person making the change is to the end user, so they will know best about the end users' needs.
+Changes in higher layers have **precedence** over the same changes in lower layers - the rational is that the higher the layer, the closer the person making the change is to the end user, so they will know best about the end users' needs.
 
 ### Example
 
@@ -30,7 +30,7 @@ From the *package.json*, click on the *deploy* start script, the select *Run Scr
 
 #### Create the same change as key user
 
-Start your deployed application on the Steampunk system and navigate to the object page by selecting an entry from the table. On the object page, you can observe that the field (*Telephone (#DatapointHidden)*) has been renamed and the new name you provided above is visible.
+Start your deployed application on the trial system and navigate to the object page by selecting an entry from the table. On the object page, you can observe that the field (*Telephone (#DatapointHidden)*) has been renamed and the new name you provided above is visible.
 
 Start UI Adaptation by clicking on the user menu in the top-right, then selecting "Adapt UI" in the menu.
 
