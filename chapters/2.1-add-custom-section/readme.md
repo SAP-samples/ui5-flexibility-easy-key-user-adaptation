@@ -2,11 +2,11 @@
 
 ## Add a custom section to the application
 
-The easiest way to add some custom flexibility behavior to certain controls is to add instance-specific designtime and flexibility information to a particular control instance. In Fiori elements applications all controls are generated according to the metadata provided, so we will use an extension point to create additional controls. This can easily be done using the Fiori Tools' 'Guided Development'. For the Object Page there is an option to 'Add a Custom Section to an Object Page Using Extensions'.
+The easiest way to add some custom flexibility behavior to certain controls is to add instance-specific designtime and flexibility information to a particular control instance. In Fiori elements applications all controls are generated according to the metadata provided, so we will use an extension point to create additional controls. This can easily be done using the Fiori Tools' 'Guided Development', which can be opened via the burger menu > *View* > *Command Palette* > "**Fiori: Open Guided Development**". For the Object Page there is an option to *Add a Custom Section to an Object Page Using Extensions*'*.
 
 ![Add Custom Section Generator](img/AddCustomSection.png)
 
-For step 1 you need to choose a name for the new fragment and click on the '**Create a File and Insert Snippet**' button. Step 2 requires you to both select an Entity Set and Extension Point. For _Entity Set_ specify '**Root**', for _Extension Point_ '**Before**'. Next, select the section relative to which (in the current selection: before) the new section will be placed. For our example, select '**Nested Tabs (#NestedTabs)**' for _Related Facets Annotation Term_. After entering the _Section Title_ followed by clicking _Insert Snippet_, the new section can be seen in the preview of the application.
+For step 1 you need to choose a name for the new fragment (field: *File Name Prefix*) and click on the *Create a File and Insert Snippet* button. Step 2 requires you to both select an Entity Set and Extension Point. For _Entity Set_ specify **Root**, for _Extension Point_ **Before**. Next, select the section relative to which (in the current selection: before) the new section will be placed. For our example, select **Nested Tabs (#NestedTabs)** for _Related Facets Annotation Term_. After entering the _Section Title_ followed by clicking _Insert Snippet_, the new section can be seen in the preview of the application.
 
 ### Update the custom section
 
@@ -59,6 +59,8 @@ sap.ui.define([], function() {
 	};
 });
 ```
+
+Save the above snippet in the *webapp/ext/CustomButton.designtime.js* file.
 
 For this action to work we now need to create a change handler for that change type.
 
@@ -121,7 +123,7 @@ sap.ui.define([], function() {
 });
 ```
 
-Having created both the change handler (_ext/CustomButton.flexibility.js_), and the instance-specific designtime (_ext/CustomButton.designtime.js_), the finished fragment should look like this:
+Having created both the change handler (_webapp/ext/CustomButton.flexibility.js_), and the instance-specific designtime (_ext/CustomButton.designtime.js_), the finished fragment should look like this:
 
 ```xml
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:dt="sap.ui.dt" xmlns:fl="sap.ui.fl">
