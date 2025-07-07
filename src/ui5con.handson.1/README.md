@@ -1,6 +1,9 @@
 ## Application Details
 
-To use this application for the tutorial you have to
+> **Note**: If you have already cloned this repository from the *chapter-2.0* branch, you simply have to click on the branch name in the bottom-left corner (*main* or *chapter-2.0*) and select *origin/chapter-2.1*.
+
+
+Otherwise, to use this application for the tutorial you have to
 
 1. Clone this repository to SAP Business Application Studio
 
