@@ -66,10 +66,10 @@ For this action to work we now need to create a change handler for that change t
 
 ## Create instance-specific change handler
 
-Change handlers can either be defined directly in library.js or, for convenience, in flexibility files that are referenced from library.js. Analogously to the designtime, it is possible to define instance-specific change handlers. Update your _Button_ definition to include a reference to _fl:flexibility_:
+Change handlers can either be defined directly in library.js or, for convenience, in flexibility files that are referenced from library.js. Analogously to the designtime, it is possible to define instance-specific change handlers. Update your _Button_ definition to include a reference to _fl:flexibility_ while also introducing a button text:
 
 ```js
-	<Button xmlns:fl="sap.ui.fl" id="customButton" dt:designtime="<module_name>/ext/CustomButton.designtime" fl:flexibility="<module_name>/ext/CustomButton.flexibility" />
+	<Button xmlns:fl="sap.ui.fl" xmlns:dt="sap.ui.dt" id="customButton" text="Create New Button" dt:designtime="<module_name>/ext/CustomButton.designtime" fl:flexibility="<module_name>/ext/CustomButton.flexibility" />
 ```
 
 > **Hint**: replace _<module_name>_ in the snippet above with the name of your project, defined in step [2.0 - Add SAP Firoi Element UIs](/chapters/2.0-add-fiori-elements-ui), paragraph 2, point 5, under 'Project Attributes'.
