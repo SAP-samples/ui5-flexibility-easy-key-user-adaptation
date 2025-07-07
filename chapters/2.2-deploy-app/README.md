@@ -6,17 +6,17 @@ In this chapter you will build and deploy your SAP Fiori elements application to
 ## 1. Prerequisites
 Make sure you finished the following steps:
 1. Login to your Cloud Foundry account in BAS, see [Chapter 2.0, step 1](/chapters/2.0-add-fiori-elements-ui/)
-2. You have a `ui5-deploy.yaml ` available in your workspace. If it is not available please run the command ` npm run deploy-config `
+2. You have a `ui5-deploy.yaml` available in your workspace. If it is not available please run the command `npm run deploy-config`
 
-<img src="img/ProjectStructure.png" width="200">
+	<img src="img/ProjectStructure.png" width="200">
 
 ## 2. Deployment
 
 To deploy your application, you have two options:
 
-1. Open the package.json file. Right-click on the "deploy" script and select "Run Script."
+1. Open the package.json file. Right-click on the *deploy* script and select *Run Script*.
 
-<img src="img/Deploy.png" width="900">
+	<img src="img/Deploy.png" width="900">
 
 
 2. Alternatively, open a terminal and enter the command: `npm run deploy`.
