@@ -11,6 +11,7 @@ To follow the instructions in this repository, you need to meet the following re
 ### 1. Create a trial account on SAP BTP in US10
 
 To create a trial account please follow [this tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+Try this link: https://cockpit.hanatrial.ondemand.com/trial/#/home/trial
 
 > [!IMPORTANT]   
 > Make sure you choose the option **US East (VA) - AWS**
