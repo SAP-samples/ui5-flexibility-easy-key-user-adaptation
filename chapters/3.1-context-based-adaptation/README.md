@@ -45,6 +45,10 @@ When switching between adaptations, note that you automatically have two adaptat
 
     <img src="img/ContextFreeAdaptation.png" width="900">
 
+<br/>
+
+> [!NOTE]   
+> You will not be able to complete the last part of this tutorial on a trial system. You will need an ABAP system with administrator access.
 
 In trial systems, users don't receive the admin role. This means they can't assign or unassign roles to their user at will.
 
