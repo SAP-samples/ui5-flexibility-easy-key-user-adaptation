@@ -1,4 +1,4 @@
-# [WORK IN PROGRESS] UI5con 2025 - Easy Key User Adaptation: From Basics to Custom Key User Actions
+# UI5con 2025 - Easy Key User Adaptation: From Basics to Custom Key User Actions
 <!-- Please include descriptive title -->
 
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:
@@ -20,7 +20,6 @@ You'll learn how to enable your own Fiori elements application for SAPUI5 flexib
 
 ## Known Issues
 No known issues.
-<!-- You may simply state "No known issues. -->
 
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.

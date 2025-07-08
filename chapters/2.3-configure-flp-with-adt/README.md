@@ -49,8 +49,8 @@ Now you should be able to open your deployed application in your SAP Fiori Launc
 
     <img src="img/MyHomeNavigation.png" width="200">
 3. Open your application and take a moment to celebrate. You've successfully completed the most complicated steps of this tutorial.
-   
+
     <img src="img/DemoApp.png" width="900">
 
 
-Continue to [Chapter 3.0 - Adapting the UI for specific user roles](/chapters/3.0-context-based-adaptation)
+Continue to [Chapter 3.0 - Layering](/chapters/3.0-layering)
