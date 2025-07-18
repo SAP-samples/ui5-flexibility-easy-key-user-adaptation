@@ -4,6 +4,8 @@ SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company and ui5-flexibil
 SPDX-License-Identifier: Apache-2.0
 -->
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/ui5-flexibility-easy-key-user-adaptation)](https://api.reuse.software/info/github.com/SAP-samples/ui5-flexibility-easy-key-user-adaptation)
+
 # UI5con 2025 - Easy Key User Adaptation: From Basics to Custom Key User Actions
 <!-- Please include descriptive title -->
 
