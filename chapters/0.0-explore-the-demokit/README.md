@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company and ui5-flexibility-easy-key-user-adaptation contributors
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Key User Adaptation in the demo kit
 
 By the end of this chapter, you will be familiar with the most common actions of key user adaptation and the tooling itself.

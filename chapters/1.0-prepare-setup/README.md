@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company and ui5-flexibility-easy-key-user-adaptation contributors
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Preparing the Development Environment
 
 By the end of this chapter, you'll have your development environment ready to start developing your flex-enabled SAPUI5 application.

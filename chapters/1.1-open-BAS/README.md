@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company and ui5-flexibility-easy-key-user-adaptation contributors
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Create a Dev Space in your SAP Business Application Studio
 
 ## 1. Open your SAP Business Application Studio

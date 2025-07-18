@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company and ui5-flexibility-easy-key-user-adaptation contributors
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Deploy your SAP Fiori elements application to your BTP ABAP environment trial account
 
 In this chapter, you will build and deploy your SAP Fiori elements application to your prepared trial SAP BTP, ABAP environment.

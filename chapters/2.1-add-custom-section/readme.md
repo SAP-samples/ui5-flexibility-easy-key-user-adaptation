@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company and ui5-flexibility-easy-key-user-adaptation contributors
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Create Custom Key User Action / Change Handler
 
 ## Add a custom section to the application
